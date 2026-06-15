@@ -3,15 +3,7 @@ name: Continuous Integration
 on:
   push:
     # Skip jobs when only documentation files are changed
-   paths-ignore:
-     - '**.md'
-     - '**.rst'
-     - 'docs/**'
   pull_request:
-    paths-ignore:
-      - '**.md'
-      - '**.rst'
-      - 'docs/**'
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * 1" 
